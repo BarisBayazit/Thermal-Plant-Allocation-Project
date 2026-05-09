@@ -11,15 +11,6 @@ Calculates distances from each plant to two production facilities using the Have
 Assigns each plant to its nearest production facility
 Visualizes the full supplier network on an interactive map of Turkey using Folium, with color-coding by assigned facility and markers by fuel type
 
-
-Project Structure
-├── data/
-│   └── thermal_plants.xlsx        # Source data: plant locations and fuel types
-├── notebooks/
-│   └── supplier_allocation.ipynb  # Main analysis notebook
-├── requirements.txt
-└── README.md
-
 Key Methodology
 Haversine Distance
 Rather than using straight-line distance as in the original Excel model, this project calculates great-circle distance between coordinates — a meaningful improvement for a geographically spread dataset spanning the full width of Turkey.
